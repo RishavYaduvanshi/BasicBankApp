@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput"
+        app:endIconMode="clear_text"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Enter Amount Here"
+        android:layout_margin="16dp"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal|number" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_money"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

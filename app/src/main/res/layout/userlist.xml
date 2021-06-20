@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/username"
+            android:drawableStart="@drawable/user"
+            android:drawableTint="#05AE08"
+            android:drawablePadding="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#05AE08"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:id="@+id/userphonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/phone"
+            android:drawableTint="#B0010117"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="2dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#B0010117"
+            android:layout_below="@+id/username"
+            android:text="Phone numebr"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentEnd="true"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            android:textColor="#05AE08"/>
+
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="balance"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#05AE08"/>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

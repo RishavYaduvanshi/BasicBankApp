@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroun3"
+    tools:context=".HistoryListActivity">
+
+    <TextView
+        android:id="@+id/staus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Transation Staus"
+        android:background="#A645DC"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textStyle="bold|italic"
+
+        />
+        <Button
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:drawableRight="@drawable/home"
+            android:drawableTint="@color/white"
+            android:backgroundTint="#A645DC"
+
+            />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/staus"
+        android:padding="10dp"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No history"
+        android:layout_centerInParent="true"
+        android:textSize="18dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
